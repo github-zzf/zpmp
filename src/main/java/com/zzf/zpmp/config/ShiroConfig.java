@@ -15,7 +15,7 @@ import java.util.Map;
  **/
 public class ShiroConfig {
 
-    public SecurityManager securityManager(UserRealm)UserRealm
+    public SecurityManager securityManager;
     //过滤链配置
     @Bean("shiroFilter")
     public ShiroFilterFactoryBean shiroFilter(SecurityManager securityManager){
