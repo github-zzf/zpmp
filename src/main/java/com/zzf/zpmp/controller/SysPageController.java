@@ -27,9 +27,9 @@ public class SysPageController {
 
     @RequestMapping("login.html")
     public String login(){
-//        if (SecurityUtils.getSubject().isAuthenticated()){
-//            return "redirect:index.html";
-//        }
+        if (SecurityUtils.getSubject().isAuthenticated()){
+            return "redirect:index.html";
+        }
         return "login";
     }
 

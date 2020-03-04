@@ -20,7 +20,7 @@ public enum StatusCode {
 
     CurrUserHasNotPermission(505,"当前用户没有权限访问该资源或者操作！"),
 
-    PasswordCanNotBlank(1000,"密码不能为空!"),
+    PasswordCanNotBlank(1000,"新密码不能为空!"),
     OldPasswordNotMatch(1001,"原密码不正确!"),
     UpdatePasswordFail(1002,"修改密码失败~请联系管理员!"),
 
