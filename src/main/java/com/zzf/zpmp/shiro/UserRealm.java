@@ -2,13 +2,13 @@ package com.zzf.zpmp.shiro;/**
  * Created by Administrator on 2019/7/30.
  */
 
-import com.debug.pmp.common.utils.Constant;
-import com.debug.pmp.model.entity.SysMenuEntity;
-import com.debug.pmp.model.entity.SysUserEntity;
-import com.debug.pmp.model.mapper.SysUserDao;
-import com.debug.pmp.server.service.SysMenuService;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
+import com.zzf.zpmp.entity.SysMenuEntity;
+import com.zzf.zpmp.entity.SysUserEntity;
+import com.zzf.zpmp.mapper.SysUserDao;
+import com.zzf.zpmp.service.SysMenuService;
+import com.zzf.zpmp.utils.Constant;
 import org.apache.commons.lang.StringUtils;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authc.credential.CredentialsMatcher;
@@ -38,14 +38,14 @@ public class UserRealm extends AuthorizingRealm {
 
     private static final Logger log= LoggerFactory.getLogger(UserRealm.class);
 
-//    @Autowired
-//    private SysUserDao sysUserDao;
-//
-//    //@Autowired
-//    //private SysMenuDao sysMenuDao;
-//
-//    @Autowired
-//    private SysMenuService sysMenuService;
+    @Autowired
+    private SysUserDao sysUserDao;
+
+    //@Autowired
+    //private SysMenuDao sysMenuDao;
+
+    @Autowired
+    private SysMenuService sysMenuService;
 
 
     /**
